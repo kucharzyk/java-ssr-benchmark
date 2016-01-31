@@ -7,14 +7,14 @@
 * Nashorn server side rendering with React [(https://github.com/facebook/react)](https://github.com/facebook/react)
 * Nashorn server side rendering with Preact [(https://github.com/developit/preact)](https://github.com/developit/preact)
 
-## Run in production mode
+## Build and run server:
 
 ``` bash
 # compile and start
  mvn spring-boot:run
 ```
 
-## Only rebuild javascript
+## Only rebuild javascript:
 
 ``` bash
 # compile javascipt
@@ -99,6 +99,6 @@ Shortest transaction:           0.00
 ## Final notes
 
 * All tests was run after proper JVM warmup
-* React does not perform well on nashrorn becouse it's not thread-safe and Nashorn throws concurency exceptions. 
+* React does not perform well on nashrorn becouse it's not thread-safe and Nashorn throws concurency exceptions (see: 773 failed transactions). 
 * React should be run with dedicated ScriptEngine instance per thread (performance degradation)
 * It looks like Preact (3KB React clone) is thread safe and run surprisingly well.
