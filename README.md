@@ -57,21 +57,21 @@ Shortest transaction:           0.00
 * React page
 
 ```
-C:\siege-windows>siege -q -b -c 50 -t60s http://localhost:8080/react/
+C:\siege-windows>siege -q -b -c 50 -t60s http://localhost:8080/react
 
 Lifting the server siege...      done.
 
-Transactions:                  57463 hits
-Availability:                  98.67 %
-Elapsed time:                  59.55 secs
-Data transferred:              39.39 MB
-Response time:                  0.05 secs
-Transaction rate:             964.99 trans/sec
-Throughput:                     0.66 MB/sec
-Concurrency:                   48.47
-Successful transactions:       57463
-Failed transactions:            773
-Longest transaction:            4.33
+Transactions:                  67475 hits
+Availability:                  98.94 %
+Elapsed time:                  59.86 secs
+Data transferred:              46.21 MB
+Response time:                  0.04 secs
+Transaction rate:            1127.19 trans/sec
+Throughput:                     0.77 MB/sec
+Concurrency:                   48.33
+Successful transactions:       67475
+Failed transactions:             726
+Longest transaction:            4.51
 Shortest transaction:           0.00
 ```
 
@@ -99,6 +99,7 @@ Shortest transaction:           0.00
 ## Final notes
 
 * All tests was run after proper JVM warmup
-* React does not perform well on nashrorn becouse it's not thread-safe and Nashorn throws concurency exceptions (see: 773 failed transactions). 
+* React does not perform well on nashrorn becouse it's not thread-safe and Nashorn throws concurency exceptions
+* See failed transations count for React
 * React should be run with dedicated ScriptEngine instance per thread (performance degradation)
 * It looks like Preact (3KB React clone) is thread safe and run surprisingly well.
