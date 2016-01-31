@@ -1,0 +1,54 @@
+.box {
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    border-color: #CCC;
+    background: #EEE;
+}
+
+.box:before {
+    position: absolute;
+    left: -21px;
+    top: -7px;
+    color: #FFF;
+    padding: 10px 20px 2px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    content: 'box';
+    background: #CCC;
+}
+
+.box.open {
+    border-right-width: 0;
+}
+
+.fox {
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    border-color: #CCC;
+    width: 255px;
+    height: 300px;
+    background: url('/images/cute-fox.png') 50% / contain no-repeat #ffffff;
+}
+
+.fox:before {
+    position: absolute;
+    left: -21px;
+    top: -7px;
+    color: #FFF;
+    padding: 10px 20px 2px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    content: 'fox';
+    background: #CCC;
+}
+
+div, span {
+    display: inline-block;
+    position: relative;
+}

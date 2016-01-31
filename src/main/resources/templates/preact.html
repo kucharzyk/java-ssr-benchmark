@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>java-ssr-benchmark</title>
+    <link rel="stylesheet" href="/css/main.css"/>
+</head>
+<body>
+<h1>Preact</h1>
+<div id="application" th:utext="${markup}"></div>
+<script src="/dist/preact.bundled.js"></script>
+<script type="text/javascript" th:inline="javascript">
+    /*<![CDATA[*/
+    document.addEventListener("DOMContentLoaded", function () {
+        var initialData = JSON.parse(/*[[${initialData}]]*/ 'Hello World');
+        window.renderOnClient(initialData);
+    }, false);
+    /*]]>*/
+</script>
+</body>
+
+</html>
