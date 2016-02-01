@@ -8,8 +8,8 @@
 	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
-	<name>java-ssr-banchmark</name>
-	<description>java-ssr-banchmark</description>
+	<name>java-ssr-benchmark</name>
+	<description>java-ssr-benchmark</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
