@@ -27,7 +27,6 @@ window.renderOnServer = function (name) {
 
 window.renderOnClient = function (name) {
     var container = document.getElementById('application');
-    container.innerHTML = '';
     preact.render(<Box type="open">
         <Fox name={name}/>
     </Box>, container, container.lastChild);

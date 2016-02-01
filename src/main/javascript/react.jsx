@@ -25,7 +25,6 @@ window.renderOnServer = function (name) {
 
 window.renderOnClient = function (name) {
     var container = document.getElementById('application');
-    container.innerHTML = '';
     ReactDOM.render(
         <Box type="open">
             <Fox name={name}/>
