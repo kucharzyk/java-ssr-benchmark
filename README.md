@@ -24,7 +24,7 @@
 server will start on [http://localhost:8080/](http://localhost:8080/)
 
 
-# My home PC spec:
+## My home PC spec:
 * AMD FX 8350 4.0Ghz (8 cores)
 * 16 GB RAM
 * SSD
