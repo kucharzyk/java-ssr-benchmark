@@ -1,4 +1,4 @@
-# java-ssr-banchmark
+# java-ssr-benchmark
 
 > Java server side rendering benchmark
 
